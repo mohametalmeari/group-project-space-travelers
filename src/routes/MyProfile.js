@@ -1,6 +1,6 @@
-const MyProfile = () => (
-  <div>
-    <p>MyProfile Comming soon!</p>
-  </div>
+import MyProfile from '../components/MyProfile';
+
+const MyProfilePage = () => (
+  <MyProfile />
 );
-export default MyProfile;
+export default MyProfilePage;
