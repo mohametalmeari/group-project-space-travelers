@@ -15,7 +15,7 @@ export const getMissions = createAsyncThunk(
   },
 );
 const initialState = {
-  misions: [],
+  missions: [],
   isLoading: true,
   error: undefined,
 };
@@ -43,11 +43,10 @@ const missionSlice = createSlice({
             id: item.mission_id,
             name: item.mission_name,
             description: item.description,
-            active: false,
+            reserved: false,
           }
         ));
-        console.log(data);
-        state.rockets = data;
+        state.missions = data;
       })
       .addCase(getMissions.rejected, (state, { payload }) => {
         state.isLoading = false;
@@ -56,6 +55,6 @@ const missionSlice = createSlice({
   },
 });
 
-export const { addElement } = missionSlice.actions;
+// export const { addElement } = missionSlice.actions;
 
 export default missionSlice.reducer;
