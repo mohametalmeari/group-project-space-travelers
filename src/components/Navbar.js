@@ -1,15 +1,16 @@
 import { NavLink } from 'react-router-dom';
 
 const links = [
-  { path: '/', text: 'MainPage' },
-  { path: 'page-one', text: 'PageOne' },
+  { path: '/', text: 'Rockets' },
+  { path: 'missions', text: 'Missions' },
+  { path: 'my-profile', text: 'My Profile' },
 ];
 
 const Navbar = () => (
   <nav>
     <h1>
       <NavLink to="/">
-        //Website Logo
+        Space Travelers Hub
       </NavLink>
     </h1>
     <ul className="menu">
