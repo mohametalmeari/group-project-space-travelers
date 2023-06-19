@@ -23,14 +23,16 @@ const initialState = {
 const missionSlice = createSlice({
   name: 'missions',
   initialState,
-  // reducers: {
-  //   addElement: (state, { payload }) => {
-  //     state.myVar.push({
-  //       firstName: payload.firstName,
-  //       lastName: payload.lastName,
-  //     });
-  //   },
-  // },
+  reducers: {
+    joinMission: (state, { payload }) => {
+      state.missions.map((item) => {
+        if (item.id === payload) {
+          item.reserved = true;
+        }
+        return item;
+      });
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getMissions.pending, (state) => {
@@ -55,6 +57,6 @@ const missionSlice = createSlice({
   },
 });
 
-// export const { addElement } = missionSlice.actions;
+export const { joinMission } = missionSlice.actions;
 
 export default missionSlice.reducer;

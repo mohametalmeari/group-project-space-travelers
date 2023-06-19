@@ -12,7 +12,7 @@ const MissionsTable = () => {
   }, [dispatch]);
 
   if (isLoading) {
-    return <div>Loading missions...</div>;
+    return <div>Loading...</div>;
   }
 
   return (
@@ -28,8 +28,10 @@ const MissionsTable = () => {
         {missions.map((item) => (
           <Mission
             key={item.id}
+            id={item.id}
             name={item.name}
             description={item.description}
+            reserved={item.reserved}
           />
         ))}
       </tbody>
