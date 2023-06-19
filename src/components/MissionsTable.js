@@ -1,15 +1,8 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Mission from './Mission';
-import { getMissions } from '../Redux/features/missions/missionSlice';
 
 const MissionsTable = () => {
   const { missions, isLoading } = useSelector((state) => state.mission);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -21,7 +14,7 @@ const MissionsTable = () => {
         <tr>
           <th>Mission</th>
           <th>Description</th>
-          <th>DescriptionStatus</th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody>
