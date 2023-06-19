@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission } from '../Redux/features/missions/missionSlice';
+import { joinMission, leaveMission } from '../Redux/features/missions/missionSlice';
 
 const Mission = ({
   id, name, description, reserved,
@@ -24,7 +24,18 @@ const Mission = ({
       </>
       )
       }
-      {reserved && <td>Active MEMBER</td>}
+      {
+      reserved && (
+      <>
+        <td>Active Member</td>
+        <td>
+          <button type="button" onClick={() => dispatch(leaveMission(id))}>
+            Leave Mission
+          </button>
+        </td>
+      </>
+      )
+      }
 
     </tr>
   );
