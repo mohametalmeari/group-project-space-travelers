@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import Mission from './Mission';
+import styles from '../styles/missions.module.css';
 
 const MissionsTable = () => {
   const { missions, isLoading } = useSelector((state) => state.mission);
@@ -12,9 +13,10 @@ const MissionsTable = () => {
     <table>
       <thead>
         <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
+          <th className={styles.tableCell}>Mission</th>
+          <th className={styles.tableCell}>Description</th>
+          <th className={styles.tableCell}>Status</th>
+          <th className={styles.tableCell}> </th>
         </tr>
       </thead>
       <tbody>

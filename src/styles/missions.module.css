@@ -1,0 +1,51 @@
+table {
+  border-collapse: collapse;
+  margin: 1rem;
+}
+
+.tableCell {
+  border: solid 1px gray;
+  padding: 0.5rem;
+  min-width: 8rem;
+}
+
+.nameTableCell {
+  border: solid 1px gray;
+  padding: 0.5rem;
+  min-width: 8rem;
+  font-weight: 700;
+}
+
+.mission:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.notActiveStatus {
+  background-color: gray;
+  color: white;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.activeStatus {
+  background-color: blue;
+  color: white;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.joinBtn {
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: solid 1px black;
+  color: black;
+}
+
+.leaveBtn {
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: solid 1px red;
+  color: red;
+}

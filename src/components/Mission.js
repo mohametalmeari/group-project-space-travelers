@@ -1,23 +1,26 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../Redux/features/missions/missionSlice';
+import styles from '../styles/missions.module.css';
 
 const Mission = ({
   id, name, description, reserved,
 }) => {
   const dispatch = useDispatch();
   return (
-    <tr>
-      <td>{name}</td>
-      <td>
+    <tr className={styles.mission}>
+      <td className={styles.nameTableCell}>{name}</td>
+      <td className={styles.tableCell}>
         {description}
       </td>
       {
       !reserved && (
       <>
-        <td>NOT A MEMBER</td>
-        <td>
-          <button type="button" onClick={() => dispatch(joinMission(id))}>
+        <td className={styles.tableCell}>
+          <span className={styles.notActiveStatus}>NOT A MEMBER</span>
+        </td>
+        <td className={styles.tableCell}>
+          <button className={styles.joinBtn} type="button" onClick={() => dispatch(joinMission(id))}>
             Join Mission
           </button>
         </td>
@@ -27,9 +30,11 @@ const Mission = ({
       {
       reserved && (
       <>
-        <td>Active Member</td>
-        <td>
-          <button type="button" onClick={() => dispatch(leaveMission(id))}>
+        <td className={styles.tableCell}>
+          <span className={styles.activeStatus}>Active Member</span>
+        </td>
+        <td className={styles.tableCell}>
+          <button className={styles.leaveBtn} type="button" onClick={() => dispatch(leaveMission(id))}>
             Leave Mission
           </button>
         </td>
