@@ -5,13 +5,11 @@ const baseAPI = 'https://api.spacexdata.com/v4/rockets';
 export const fetchRocket = createAsyncThunk('rockets/fetchRocket', async () => {
   try {
     const response = await axios.get(baseAPI);
-    console.log(response.data);
     return response.data;
   } catch (error) {
     throw new Error('Something went wrong');
   }
 });
-console.log(fetchRocket());
 const initialState = {
   rockets: [],
   isLoading: false,
