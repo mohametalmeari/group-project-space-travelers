@@ -11,7 +11,7 @@ const MissionsTable = () => {
     if (missions.length === 0) {
       dispatch(getMissions());
     }
-  }, [dispatch]);
+  }, [dispatch, missions.length]);
 
   if (isLoading) {
     return <div>Loading...</div>;
