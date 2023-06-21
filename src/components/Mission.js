@@ -47,9 +47,9 @@ const Mission = ({
 };
 
 Mission.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  id: PropTypes.string,
+  reserved: PropTypes.bool,
 };
 export default Mission;

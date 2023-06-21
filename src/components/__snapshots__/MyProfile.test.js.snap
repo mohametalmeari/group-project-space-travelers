@@ -2,21 +2,35 @@
 
 exports[`MyProfile Component Test render of MyProfile 1`] = `
 <div>
-  <section>
-    <h2>
-      My Missions
-    </h2>
-    <ul />
-  </section>
-  <section>
-    <h2>
-      My Rockets
-    </h2>
-    <ul>
-      <li>
-        Falcon 9
-      </li>
-    </ul>
-  </section>
+  <div
+    class="my-profile"
+  >
+    <section>
+      <div
+        class="joinedMissionsContainer"
+      >
+        <h2
+          class="joinedMissionsHeader"
+        >
+          My Missions
+        </h2>
+        <p
+          class="noMissionsJoined"
+        >
+          No missions joined
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>
+        My Rockets
+      </h2>
+      <ul>
+        <li>
+          Falcon 9
+        </li>
+      </ul>
+    </section>
+  </div>
 </div>
 `;

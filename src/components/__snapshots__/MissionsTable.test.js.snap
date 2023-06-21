@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Mission Component Test render of Mission 1`] = `
-<div>
-  <div>
-    Loading...
-  </div>
-</div>
-`;
-
 exports[`MissionsTable Component Test render of MissionsTable 1`] = `
-<div>
-  <div>
-    Loading...
-  </div>
-</div>
-`;
-
-exports[`MissionsTable Component Test render of MissionsTable 2`] = `
 <div>
   <div>
     Loading...

@@ -2,18 +2,19 @@
 
 exports[`JoinedMissions Component Test render of JoinedMissions 1`] = `
 <div>
-  <h2>
-    My Missions
-  </h2>
-  <ul />
-</div>
-`;
-
-exports[`Layout Component Test render of Layout 1`] = `
-<div>
-  <h2>
-    My Missions
-  </h2>
-  <ul />
+  <div
+    class="joinedMissionsContainer"
+  >
+    <h2
+      class="joinedMissionsHeader"
+    >
+      My Missions
+    </h2>
+    <p
+      class="noMissionsJoined"
+    >
+      No missions joined
+    </p>
+  </div>
 </div>
 `;
