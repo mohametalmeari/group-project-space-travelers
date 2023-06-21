@@ -42,3 +42,11 @@ table {
     transform: rotate(360deg);
   }
 }
+
+.my-profile {
+  display: flex;
+}
+
+.my-profile section {
+  flex: 1;
+}

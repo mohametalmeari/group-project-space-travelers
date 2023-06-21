@@ -49,3 +49,26 @@ table {
   border: solid 1px red;
   color: red;
 }
+
+.joinedMissionsHeader {
+  font-size: 32px;
+  margin: 8px;
+}
+
+.joinedMissionsList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.joinedMissionItem {
+  font-weight: 600;
+  font-size: 24px;
+  border: solid 1px lightgray;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.joinedMissionsContainer {
+  margin: 2rem;
+}

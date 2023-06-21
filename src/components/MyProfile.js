@@ -1,7 +1,7 @@
 import JoinedMissions from './JoinedMissions';
 
 const MyProfile = () => (
-  <>
+  <div className="my-profile">
     <section>
       <JoinedMissions />
     </section>
@@ -11,6 +11,6 @@ const MyProfile = () => (
         <li>Falcon 9</li>
       </ul>
     </section>
-  </>
+  </div>
 );
 export default MyProfile;

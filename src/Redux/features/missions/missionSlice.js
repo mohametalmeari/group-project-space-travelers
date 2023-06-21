@@ -7,7 +7,6 @@ export const getMissions = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const resp = await fetch(url);
-      console.log(resp);
       if (resp.ok) {
         const data = await resp.json();
         return data;
