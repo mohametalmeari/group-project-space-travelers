@@ -1,3 +1,5 @@
+import ReservedRocketDisplay from '../RocketComponent/ReservedRockets';
+
 const MyProfile = () => (
   <>
     <section>
@@ -7,10 +9,7 @@ const MyProfile = () => (
       </ul>
     </section>
     <section>
-      <h2>My Rockets</h2>
-      <ul>
-        <li>Falcon 9</li>
-      </ul>
+      <ReservedRocketDisplay />
     </section>
   </>
 );
