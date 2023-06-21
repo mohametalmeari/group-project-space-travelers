@@ -1,15 +1,15 @@
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import App from './App';
-import store from './Redux/store';
+import store from '../Redux/store';
+import MissionsTable from './MissionsTable';
 
-describe('App Component', () => {
-  test('Test render of App', () => {
+describe('MissionsTable Component', () => {
+  test('Test render of MissionsTable', () => {
     const { container } = render(
       <MemoryRouter>
         <Provider store={store}>
-          <App />
+          <MissionsTable />
         </Provider>
       </MemoryRouter>,
     );

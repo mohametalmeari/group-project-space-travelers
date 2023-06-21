@@ -1,19 +1,24 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const url = 'https://api.spacexdata.com/v3/missions';
 
 export const getMissions = createAsyncThunk(
   'missions/getMissions',
-  async (thunkAPI) => {
+  async (_, thunkAPI) => {
     try {
-      const resp = await axios.get(url);
-      return resp.data;
+      const resp = await fetch(url);
+      console.log(resp);
+      if (resp.ok) {
+        const data = await resp.json();
+        return data;
+      }
+      throw new Error('Something went wrong');
     } catch (error) {
-      return thunkAPI.rejectWithValue('somthing went wrong');
+      return thunkAPI.rejectWithValue(error.message);
     }
   },
 );
+
 const initialState = {
   missions: [],
   isLoading: true,
@@ -25,20 +30,14 @@ const missionSlice = createSlice({
   initialState,
   reducers: {
     joinMission: (state, { payload }) => {
-      state.missions.map((item) => {
-        if (item.id === payload) {
-          item.reserved = true;
-        }
-        return item;
-      });
+      state.missions = state.missions.map((item) => (
+        (item.id === payload ? { ...item, reserved: true } : item)
+      ));
     },
     leaveMission: (state, { payload }) => {
-      state.missions.map((item) => {
-        if (item.id === payload) {
-          item.reserved = false;
-        }
-        return item;
-      });
+      state.missions = state.missions.map((item) => (
+        (item.id === payload ? { ...item, reserved: false } : item)
+      ));
     },
   },
   extraReducers: (builder) => {
@@ -48,14 +47,12 @@ const missionSlice = createSlice({
       })
       .addCase(getMissions.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        const data = payload.map((item) => (
-          {
-            id: item.mission_id,
-            name: item.mission_name,
-            description: item.description,
-            reserved: false,
-          }
-        ));
+        const data = payload.map((item) => ({
+          id: item.mission_id,
+          name: item.mission_name,
+          description: item.description,
+          reserved: false,
+        }));
         state.missions = data;
       })
       .addCase(getMissions.rejected, (state, { payload }) => {
