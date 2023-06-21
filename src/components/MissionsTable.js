@@ -1,9 +1,17 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Mission from './Mission';
 import styles from '../styles/missions.module.css';
+import { getMissions } from '../Redux/features/missions/missionSlice';
 
 const MissionsTable = () => {
   const { missions, isLoading } = useSelector((state) => state.mission);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (missions.length === 0) {
+      dispatch(getMissions());
+    }
+  }, [dispatch]);
 
   if (isLoading) {
     return <div>Loading...</div>;
