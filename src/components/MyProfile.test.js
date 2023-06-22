@@ -1,15 +1,15 @@
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import App from './App';
-import store from './Redux/store';
+import store from '../Redux/store';
+import MyProfile from './MyProfile';
 
-describe('App Component', () => {
-  test('Test render of App', () => {
+describe('MyProfile Component', () => {
+  test('Test render of MyProfile', () => {
     const { container } = render(
       <MemoryRouter>
         <Provider store={store}>
-          <App />
+          <MyProfile />
         </Provider>
       </MemoryRouter>,
     );
