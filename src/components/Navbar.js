@@ -23,15 +23,13 @@ const Navbar = () => (
         </NavLink>
       </h2>
       <ul className={`menu ${styles.navLinkRow}`}>
-        <div className={styles.navlinkContainer}>
-          {links.map((link) => (
-            <li className="page-link" key={link.text}>
-              <NavLink className="page-link" activeClassName={styles.active} to={link.path}>
-                {link.text}
-              </NavLink>
-            </li>
-          ))}
-        </div>
+        {links.map((link) => (
+          <li className="page-link" key={link.text}>
+            <NavLink className="page-link" activeClassName={styles.active} to={link.path}>
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </Nav>
   </Container>
