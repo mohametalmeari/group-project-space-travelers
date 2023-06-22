@@ -1,8 +1,5 @@
-
 import ReservedRocketDisplay from '../RocketComponent/ReservedRockets';
-
 import JoinedMissions from './JoinedMissions';
-
 
 const MyProfile = () => (
   <div className="my-profile">
