@@ -20,9 +20,11 @@ const RocketList = () => {
   }
   return (
     <>
-      {rockets.map((rocketItems) => (
-        <RocketItem key={rocketItems.id} rocketData={rocketItems} />
-      )) }
+      <ul style={{ marginTop: '2%' }}>
+        {rockets.map((rocketItems) => (
+          <RocketItem key={rocketItems.id} rocketData={rocketItems} />
+        )) }
+      </ul>
     </>
   );
 };
