@@ -1,0 +1,31 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  background-color: #fbfbfb;
+}
+
+.navlinkContainer {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-logo {
+  text-decoration: none;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.page-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
