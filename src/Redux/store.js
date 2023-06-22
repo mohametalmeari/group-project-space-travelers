@@ -6,6 +6,7 @@ const store = configureStore({
   reducer: {
     rocket: rocketReducer,
     mission: missionReducer,
+  },
 });
 
 export default store;
