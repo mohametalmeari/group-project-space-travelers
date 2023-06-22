@@ -1,6 +1,8 @@
+import RocketList from '../RocketComponent/RocketList';
+
 const Rockets = () => (
-  <div>
-    <p>Rockets Comming soon!</p>
-  </div>
+  <>
+    <RocketList />
+  </>
 );
 export default Rockets;

@@ -1,0 +1,42 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  background-color: #fbfbfb;
+  padding: 0.7% 0.7%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.navlinkContainer {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.nav-logo {
+  text-decoration: none;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+  margin: auto 0;
+  margin-right: 2em;
+  color: #2f89fc;
+  font-size: 1.05em;
+}
+
+.menu li:first-child a {
+  text-decoration: underline;
+}
+
+.page-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -1,3 +1,4 @@
+import ReservedRocketDisplay from '../RocketComponent/ReservedRockets';
 import JoinedMissions from './JoinedMissions';
 
 const MyProfile = () => (
@@ -6,10 +7,7 @@ const MyProfile = () => (
       <JoinedMissions />
     </section>
     <section>
-      <h2>My Rockets</h2>
-      <ul>
-        <li>Falcon 9</li>
-      </ul>
+      <ReservedRocketDisplay />
     </section>
   </div>
 );
