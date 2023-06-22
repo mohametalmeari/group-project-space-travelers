@@ -1,16 +1,17 @@
+
 import ReservedRocketDisplay from '../RocketComponent/ReservedRockets';
 
+import JoinedMissions from './JoinedMissions';
+
+
 const MyProfile = () => (
-  <>
+  <div className="my-profile">
     <section>
-      <h2>My Missions</h2>
-      <ul>
-        <li>Telstar</li>
-      </ul>
+      <JoinedMissions />
     </section>
     <section>
       <ReservedRocketDisplay />
     </section>
-  </>
+  </div>
 );
 export default MyProfile;
