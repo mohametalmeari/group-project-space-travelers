@@ -22,7 +22,7 @@ const Navbar = () => (
           Space Travelers Hub
         </NavLink>
       </h2>
-      <ul className={`menu ${styles.navLinkRow}`}>
+      <ul className={styles.menu}>
         {links.map((link) => (
           <li className="page-link" key={link.text}>
             <NavLink className="page-link" activeClassName={styles.active} to={link.path}>
