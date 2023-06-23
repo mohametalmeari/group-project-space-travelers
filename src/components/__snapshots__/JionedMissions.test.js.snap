@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JoinedMissions Component Test render of JoinedMissions 1`] = `
+<div>
+  <div
+    class="joinedMissionsContainer"
+  >
+    <h2
+      class="joinedMissionsHeader"
+    >
+      My Missions
+    </h2>
+    <p
+      class="noMissionsJoined"
+    >
+      No missions joined
+    </p>
+  </div>
+</div>
+`;

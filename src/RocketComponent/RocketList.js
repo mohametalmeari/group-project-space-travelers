@@ -7,8 +7,11 @@ const RocketList = () => {
   const { rockets, isLodaing, error } = useSelector((store) => store.rocket);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchRocket());
-  }, [dispatch]);
+    if (rockets.length === 0) {
+      dispatch(fetchRocket());
+    }
+  }, [dispatch, rockets.length]);
+
   if (isLodaing) {
     return <p>is Loading...</p>;
   }
@@ -17,9 +20,11 @@ const RocketList = () => {
   }
   return (
     <>
-      {rockets.map((rocketItems) => (
-        <RocketItem key={rocketItems.id} rocketData={rocketItems} />
-      )) }
+      <ul style={{ marginTop: '2%' }}>
+        {rockets.map((rocketItems) => (
+          <RocketItem key={rocketItems.id} rocketData={rocketItems} />
+        )) }
+      </ul>
     </>
   );
 };

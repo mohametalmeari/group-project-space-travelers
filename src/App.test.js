@@ -3,8 +3,8 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './Redux/store'; // Import your Redux store
-
 import App from './App';
+import store from './Redux/store';
 
 test('renders learn react link', () => {
   render(
@@ -14,7 +14,6 @@ test('renders learn react link', () => {
       </Router>
     </Provider>,
   );
-
   const linkElement = screen.getByText(/Rockets/i);
   expect(linkElement).toBeInTheDocument();
 });

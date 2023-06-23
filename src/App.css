@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+table {
+  border-collapse: collapse;
+  margin: 1rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,4 +41,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.my-profile {
+  display: flex;
+}
+
+.my-profile section {
+  flex: 1;
 }
