@@ -1,23 +1,22 @@
-table {
+.missionsTable {
   border-collapse: collapse;
-  margin: 1rem;
+  margin: 1rem 8%;
 }
 
 .tableCell {
-  border: solid 1px gray;
+  border: solid 1px lightgray;
   padding: 0.5rem;
-  min-width: 8rem;
+  min-width: 12rem;
 }
 
 .nameTableCell {
-  border: solid 1px gray;
+  border: solid 1px lightgray;
   padding: 0.5rem;
-  min-width: 8rem;
   font-weight: 700;
 }
 
 .mission:nth-child(odd) {
-  background-color: lightgray;
+  background-color: rgb(245, 244, 244);
 }
 
 .notActiveStatus {
@@ -51,8 +50,8 @@ table {
 }
 
 .joinedMissionsHeader {
-  font-size: 32px;
-  margin: 8px;
+  font-size: 28px;
+  margin: 0 0 8px;
 }
 
 .joinedMissionsList {
@@ -64,11 +63,13 @@ table {
 .joinedMissionItem {
   font-weight: 600;
   font-size: 24px;
-  border: solid 1px lightgray;
+  border: solid 1px rgb(231, 231, 231);
+  margin: 0 12px;
   padding: 1rem;
   border-radius: 0.5rem;
 }
 
 .joinedMissionsContainer {
-  margin: 2rem;
+  padding: 0 12px;
+  margin: 0;
 }

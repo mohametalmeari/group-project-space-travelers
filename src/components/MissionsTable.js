@@ -18,7 +18,7 @@ const MissionsTable = () => {
   }
 
   return (
-    <table>
+    <table className={styles.missionsTable}>
       <thead>
         <tr>
           <th className={styles.tableCell}>Mission</th>

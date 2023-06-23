@@ -22,14 +22,23 @@ exports[`MyProfile Component Test render of MyProfile 1`] = `
       </div>
     </section>
     <section>
-      <h2>
-        My Rockets
-      </h2>
-      <ul>
-        <li>
-          Falcon 9
-        </li>
-      </ul>
+      <div
+        class="container"
+        style="width: 60%;"
+      >
+        <h3>
+          My Rockets
+        </h3>
+        <div>
+          <div
+            class="colums"
+          >
+            <p>
+              Currently no rockets reserved.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </div>

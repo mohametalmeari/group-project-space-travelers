@@ -11,8 +11,8 @@ const links = [
 const Navbar = () => (
   <Container>
     <Nav className={styles.navContainer}>
-      <h2 className="nav-logo">
-        <NavLink className={styles.navlinkContainer} to="/">
+      <h2 className={styles.navLogo}>
+        <NavLink to="/">
           <img
             width="40"
             height="40"
@@ -24,8 +24,8 @@ const Navbar = () => (
       </h2>
       <ul className={styles.menu}>
         {links.map((link) => (
-          <li className="page-link" key={link.text}>
-            <NavLink className="page-link" activeClassName={styles.active} to={link.path}>
+          <li className="pageLink" key={link.text}>
+            <NavLink to={link.path}>
               {link.text}
             </NavLink>
           </li>

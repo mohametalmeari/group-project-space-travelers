@@ -6,7 +6,7 @@ const ReservedRocketDisplay = () => {
   const rockets = useSelector((store) => store.rocket.rockets);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
   return (
-    <Container style={{ width: '60%' }}>
+    <Container>
       <h3>My Rockets</h3>
       <div>
         <div className="colums">
