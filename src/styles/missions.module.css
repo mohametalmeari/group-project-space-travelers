@@ -41,12 +41,22 @@
   color: black;
 }
 
+.joinBtn:hover {
+  background-color: black;
+  color: white;
+}
+
 .leaveBtn {
   background-color: transparent;
   border-radius: 4px;
   padding: 0.5rem;
   border: solid 1px red;
   color: red;
+}
+
+.leaveBtn:hover {
+  background-color: red;
+  color: white;
 }
 
 .joinedMissionsHeader {

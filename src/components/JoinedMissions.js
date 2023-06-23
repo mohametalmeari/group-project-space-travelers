@@ -3,8 +3,9 @@ import styles from '../styles/missions.module.css';
 
 const JoinedMissions = () => {
   const { missions } = useSelector((state) => state.mission);
-  const noReserved = missions.every((item) => !item.reserved);
-  if (noReserved) {
+  const missionsJoined = missions.filter((mission) => mission.reserved);
+
+  if (missionsJoined.length === 0) {
     return (
       <div className={styles.joinedMissionsContainer}>
         <h2 className={styles.joinedMissionsHeader}>My Missions</h2>
@@ -17,13 +18,10 @@ const JoinedMissions = () => {
     <div className={styles.joinedMissionsContainer}>
       <h2 className={styles.joinedMissionsHeader}>My Missions</h2>
       <ul className={styles.joinedMissionsList}>
-        {missions.map((item) => (
-          item.reserved
-            && (
-            <li className={styles.joinedMissionItem} key={item.id}>
-              {item.name}
-            </li>
-            )
+        {missionsJoined.map((item) => (
+          <li className={styles.joinedMissionItem} key={item.id}>
+            {item.name}
+          </li>
         ))}
       </ul>
     </div>
