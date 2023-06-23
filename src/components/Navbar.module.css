@@ -1,0 +1,25 @@
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  background-color: #fbfbfb;
+  padding: 0.7% 0.7%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.navLogo a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: auto 0;
+  margin-right: 2em;
+  color: #2f89fc;
+  font-size: 1.05em;
+}

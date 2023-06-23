@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Component Test render of Layout 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="navContainer nav"
+      >
+        <h2
+          class="nav-logo"
+        >
+          <a
+            aria-current="page"
+            class="navlinkContainer active"
+            href="/"
+          >
+            <img
+              alt="saturn-planet"
+              height="40"
+              src="https://img.icons8.com/badges/48/saturn-planet.png"
+              width="40"
+            />
+            Space Travelers Hub
+          </a>
+        </h2>
+        <ul
+          class="menu"
+        >
+          <li
+            class="page-link"
+          >
+            <a
+              activeclassname="active"
+              aria-current="page"
+              class="page-link active"
+              href="/"
+            >
+              Rockets
+            </a>
+          </li>
+          <li
+            class="page-link"
+          >
+            <a
+              activeclassname="active"
+              class="page-link"
+              href="/missions"
+            >
+              Missions
+            </a>
+          </li>
+          <li
+            class="page-link"
+          >
+            <a
+              activeclassname="active"
+              class="page-link"
+              href="/my-profile"
+            >
+              My Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

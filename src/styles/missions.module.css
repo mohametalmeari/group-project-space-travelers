@@ -1,0 +1,85 @@
+.missionsTable {
+  border-collapse: collapse;
+  margin: 1rem 8%;
+}
+
+.tableCell {
+  border: solid 1px lightgray;
+  padding: 0.5rem;
+  min-width: 12rem;
+}
+
+.nameTableCell {
+  border: solid 1px lightgray;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.mission:nth-child(odd) {
+  background-color: rgb(245, 244, 244);
+}
+
+.notActiveStatus {
+  background-color: gray;
+  color: white;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.activeStatus {
+  background-color: blue;
+  color: white;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.joinBtn {
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: solid 1px black;
+  color: black;
+}
+
+.joinBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.leaveBtn {
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: solid 1px red;
+  color: red;
+}
+
+.leaveBtn:hover {
+  background-color: red;
+  color: white;
+}
+
+.joinedMissionsHeader {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.joinedMissionsList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.joinedMissionItem {
+  font-weight: 600;
+  font-size: 24px;
+  border: solid 1px rgb(231, 231, 231);
+  margin: 0 12px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.joinedMissionsContainer {
+  padding: 0 12px;
+  margin: 0;
+}
