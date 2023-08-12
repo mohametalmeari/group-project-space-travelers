@@ -62,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
- <!-- - [Live Demo Link](https://mohametalmeari.github.io/Space Travelers' Hub) -->
+ - [Live Demo Link](https://mohametalmeari.github.io/group-project-space-travelers/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
