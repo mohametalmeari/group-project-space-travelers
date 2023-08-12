@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/group-project-space-travelers/static/css/main.271189a2.css",
+    "main.js": "/group-project-space-travelers/static/js/main.a324b38a.js",
+    "static/js/787.8382e2f1.chunk.js": "/group-project-space-travelers/static/js/787.8382e2f1.chunk.js",
+    "index.html": "/group-project-space-travelers/index.html",
+    "main.271189a2.css.map": "/group-project-space-travelers/static/css/main.271189a2.css.map",
+    "main.a324b38a.js.map": "/group-project-space-travelers/static/js/main.a324b38a.js.map",
+    "787.8382e2f1.chunk.js.map": "/group-project-space-travelers/static/js/787.8382e2f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.271189a2.css",
+    "static/js/main.a324b38a.js"
+  ]
+}
