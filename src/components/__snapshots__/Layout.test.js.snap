@@ -12,11 +12,11 @@ exports[`Layout Component Test render of Layout 1`] = `
         class="navContainer nav"
       >
         <h2
-          class="nav-logo"
+          class="navLogo"
         >
           <a
             aria-current="page"
-            class="navlinkContainer active"
+            class="active"
             href="/"
           >
             <img
@@ -32,34 +32,31 @@ exports[`Layout Component Test render of Layout 1`] = `
           class="menu"
         >
           <li
-            class="page-link"
+            class="pageLink"
           >
             <a
-              activeclassname="active"
               aria-current="page"
-              class="page-link active"
+              class="active"
               href="/"
             >
               Rockets
             </a>
           </li>
           <li
-            class="page-link"
+            class="pageLink"
           >
             <a
-              activeclassname="active"
-              class="page-link"
+              class=""
               href="/missions"
             >
               Missions
             </a>
           </li>
           <li
-            class="page-link"
+            class="pageLink"
           >
             <a
-              activeclassname="active"
-              class="page-link"
+              class=""
               href="/my-profile"
             >
               My Profile

@@ -4,7 +4,7 @@
 
   <br/>
 
-  <h3><b>Space Travelers' Hub README</b></h3>
+  <h3><b>Space Travelers' Hub - README</b></h3>
 
 </div>
 
@@ -27,7 +27,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowlednpments](#acknowlednpments)
+- [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
@@ -41,8 +41,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Our tech stack consisting of React for the front-end.
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -52,11 +50,6 @@
 
 
 ### Key Features <a name="key-features"></a>
-
-> Key Features of Space Travelers' Hub Website
-
-
-Includes the following features...
 
 - **Explore and reserve rockets**
 - **Explore and join missions**
@@ -69,10 +62,7 @@ Includes the following features...
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- > Open the link bellow: -->
-> Comming soon ...
-
- <!-- - [Live Demo Link](https://mohametalmeari.github.io/Space Travelers' Hub) -->
+ - [Live Demo Link](https://mohametalmeari.github.io/group-project-space-travelers/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,17 +70,15 @@ Includes the following features...
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> A new developer can use this project as a guide to creating a space exploration website.
-
 To get a local copy up and running, follow these steps.
-
 
 ### Prerequisites
 
 In order to run this project you need:
 
 ```sh
-  npm start
+  npm install
+  npm run build
 ```
 
 ### Setup
@@ -104,19 +92,17 @@ Clone this repository to your desired folder:
 
 ### Usage
 
-How to open your project in the browser? 
-Double click on HTML file and the HTML file will be open in your browser.
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
 
 ### Run tests
 
 To run tests, run the following command:
 
 ```sh
-  npm install --save-dev jest
-  npm install --save-dev @babel/plugin-transform-modules-commonjs
-  npm install --save-dev jest-environment-jsdom
-  npm install jquery
-  npm install --save-dev identity-obj-proxy
   npm test
 ```
 
@@ -125,7 +111,6 @@ To run tests, run the following command:
 You can deploy this project using:
 
 ```sh
-  npm install gh-pages
   npm run deploy 
 ```
 
@@ -135,18 +120,16 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-> This project was done by Mohamad and Binod.
+👤 **Mohamad**
 
-👤 **Mohamad Almeari**
+- GitHub: [@mohametalmeari](https://github.com/mohametalmeari)
+- Twitter: [@MohametAlmeari](https://twitter.com/MohametAlmeari)
+- LinkedIn: [mohamet-almeari](https://www.linkedin.com/in/mohamet-almeari)
 
-- GitHub: [@githubhandle](https://github.com/mohametalmeari)
-- Twitter: [@twitterhandle](https://twitter.com/MohametAlmeari)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamet-almeari)
+👤 **Binod**
 
-👤 **Binod Bhusal**
-
-- GitHub: [@githubhandle](https://github.com/binodbhusal)
-- Twitter: [@twitterhandle](https://twitter.com/Binod_ironLad)
+- GitHub: [@binodbhusal](https://github.com/binodbhusal)
+- Twitter: [@Binod_ironLad](https://twitter.com/Binod_ironLad)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/binodbhusal)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -177,15 +160,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Share and Review!
-
 We invite you to share this project with others and provide a favorable review if you find it to be useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDnpmENTS -->
+<!-- ACKNOWLEDGMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowlednpments"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > The original design idea for this web page was created by Microverse Team.
 
