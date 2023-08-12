@@ -24,7 +24,6 @@ exports[`MyProfile Component Test render of MyProfile 1`] = `
     <section>
       <div
         class="container"
-        style="width: 60%;"
       >
         <h3>
           My Rockets
